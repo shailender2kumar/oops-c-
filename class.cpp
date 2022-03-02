@@ -1,29 +1,39 @@
 #include<iostream>
 using namespace std;
-class smallobj
-{
-    private:
-    int somedata ;
-    public:
-    void setdata(int D)
-    {
-        somedata = D;
-    }
-    void showdata()
-    {
-        cout<<"data is "<<somedata<<endl;
-    }
-
-};
-int main()
-{
-    smallobj s1,s2;
-    s1.setdata(1066);
-    s2.setdata(1776);
-    s1.showdata();
-    s2.showdata();
-    return 0;
-}
+ class power
+ {
+     private:
+     double m,result =1;
+     int n;
+     public :
+     void takefunction()
+     {
+cout<<"enter the interger"<<endl;
+cin>>m;
+cout<<"enter the power"<<endl;
+cin>>n;
+ }
+ void displaydata()
+ {
+     cout<<"your result is "<<result<<endl;
+ }
+ void powerfun(){
+     for(int i=1;i<=n;i++){
+     result=result*m;
+     }
+ }
+ };
+  int  main()
+  
+  {
+      power s1;
+      s1.takefunction();
+      s1.powerfun();
+      s1.displaydata();
+return 0;
+  }
+  
+ 
 
 
 

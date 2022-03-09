@@ -5,25 +5,28 @@ using namespace std;
         double balance;
         double amount;
         public:
-        double deposite(){
+        void deposite(){
             cout<<"enter deposite amount"<<endl;
             cin>>amount;
              balance = balance+amount;
             cout<<"your total balance "<<balance<<endl;
-            return 0;
+            
 
         }
-        double withdraw(){
+       void withdraw(){
             cout<<"enter withdraw amount";
             cin>>amount;
              balance=balance-amount;
+             if(balance<0){
+                 cout<<"paise khatham"<<endl;
+                 exit(0);
+             }
             cout<<"amount withdraw successfully"<<endl;
 
              cout<<"now your total balance"<<balance<<endl;
             // intrest(balance);
-             return 0;
-        }
-        int intrest()
+       }
+        void intrest()
         {
             float rate,time;
             cout<<"rate";
@@ -32,7 +35,7 @@ using namespace std;
             cin>>time;
             float temp1= balance*rate*time/100;
             cout<<"INTREST:"<<temp1<<endl<<"total balance in account after interest "<<temp1+balance<<endl;
-            return 0;
+          
         }
 
     };

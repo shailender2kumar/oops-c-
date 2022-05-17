@@ -22,7 +22,7 @@ public:
 		inch = i;
 	}
 
-	// Overloading (+) operator to perform addition of
+	// Overloading (+) operator to perform division of
 	// two distance object
 	Distance operator+(Distance& d2) // Call by reference
 	{

@@ -1,0 +1,23 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+class Mystring{
+    public:
+    string str;
+    Mystring(string s){
+        str =s;
+    }
+    string operator +(string q){
+        string temp = q;
+            temp =str+temp;
+        return temp;
+    }
+};
+int main() {
+    // Write C++ code here
+    Mystring s("ABC");
+    cout<<"string  "<< s+"c";
+    
+
+    return 0;
+}
